@@ -24,9 +24,8 @@ body{
     font-size:16px;
 }
 
-    html{
-    scroll-behavior: smooth;
-}
+
+
 /* Navbar */
 .navbar{
     position:fixed;
@@ -60,6 +59,10 @@ body{
     padding:100px 40px 40px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .profile{
     width:250px;
     height:250px;
@@ -86,6 +89,31 @@ body{
 }
 
 .btn{
+    text-decoration:none;
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:30px;
+    border:2px solid #007bff;
+    color:#fff;
+    background:#007bff;
+    transition:0.3s ease;
+}
+
+/* Hover Effect */
+.btn:hover{
+    background:transparent;
+    color:#007bff;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,123,255,0.4);
+} 
+.btn{
+    text-decoration: none;
+}
+.btn i{
+    margin-right:8px;
+}
+
+.btn{
     display:inline-block;
     padding:10px 25px;
     margin-top:15px;
@@ -106,7 +134,7 @@ section{
 h2{
     font-size:28px;
     margin-bottom:15px;
-    color:#007bff;
+    color: silver;
 }
 
 /* Skills */
@@ -225,6 +253,9 @@ h2{
 </style>
 </head>
 
+
+
+
 <body>
 
 <!-- Navbar -->
@@ -248,9 +279,14 @@ h2{
     <div class="hero-text">
         <h1>Sakib Ahmed</h1>
         <p>As a Learner, Exploring Technology</p>
-        <a href="#" class="btn btn-primary">Facebook Profile</a>
+
+      <a href="https://www.facebook.com/sakib.ahmed.98089" target="_blank" class="btn btn-primary">
+      <i class="fab fa-facebook"></i> Facebook Profile
+       </a>
     </div>
 </section>
+
+
 
 <!-- About -->
 <section id="about" class="fade">
@@ -277,6 +313,8 @@ h2{
     <h2>Projects</h2>
     <div class="projects">
         <div class="project">Project 1</div>
+        <div class="project">Project 2</div>
+        <div class="project">Project 3</div>
         <div class="project">Project 2</div>
         <div class="project">Project 3</div>
     </div>
