@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sakib Ahmed Profile </title>
+<title>Sakib Ahmed Profile</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -23,13 +24,10 @@ body{
     justify-content:center;
 }
 
-
-
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
-/* MAIN CONTAINER (CENTER FIX) */
 .main-container{
     width:100%;
     max-width:1100px;
@@ -44,32 +42,20 @@ html{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 20px;
-    background:#141e30;
+    padding:12px 15px;
+    background:rgba(20,30,48,.75);
+    backdrop-filter:blur(12px);
+    box-shadow:0 4px 18px rgba(0,0,0,.25);
     z-index:1000;
 }
-.navbar{
-    background:rgba(20,30,48,.75);
-    backdrop-filter: blur(12px);
-    box-shadow:0 4px 18px rgba(0,0,0,.25);
-}
 
 .nav-links a{
     color:#ccc;
-    margin-left:20px;
+    margin-left:15px;
     text-decoration:none;
     position:relative;
-    padding-bottom:5px;
-    transition:.3s;
-}
-
-.nav-links a{
-    color:#ccc;
-    margin-left:20px;
-    text-decoration:none;
-    position:relative;
-    padding-bottom:5px;
-    transition:.3s;
+    padding-bottom:4px;
+    font-size:14px;
 }
 
 .nav-links a::after{
@@ -81,7 +67,7 @@ html{
     width:0;
     height:2px;
     background:#00c6ff;
-    transition:.35s;
+    transition:.3s;
 }
 
 .nav-links a:hover{
@@ -91,27 +77,22 @@ html{
 .nav-links a:hover::after{
     width:100%;
 }
- @media(max-width:768px){
-    .nav-links a{
-        font-size:12px;
-        margin:0 5px;
-    }
-}   
+
 /* Hero */
 .hero{
     min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:60px;
+    gap:40px;
     padding:100px 20px 40px;
 }
 
 .profile{
-    width:250px;
-    height:250px;
+    width:220px;
+    height:220px;
     border-radius:50%;
-    border:8px solid #444;
+    border:6px solid #444;
     overflow:hidden;
 }
 
@@ -119,80 +100,78 @@ html{
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:center;
 }
 
 .hero-text h1{
-    font-size:50px;
+    font-size:42px;
     color:#00c6ff;
 }
 
 .hero-text p{
-    font-size:18px;
+    font-size:16px;
     color:#bbb;
 }
 
 .btn{
     display:inline-block;
-    padding:10px 25px;
-    margin-top:15px;
-    border-radius:30px;
+    padding:8px 20px;
+    margin-top:12px;
+    border-radius:25px;
     border:2px solid #00c6ff;
     background:#00c6ff;
     color:#fff;
     text-decoration:none;
-    transition:0.3s;   
+    font-size:14px;
+    transition:0.3s;
 }
-
 
 .btn:hover{
     background:transparent;
     color:#00c6ff;
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(0,198,255,0.4);
 }
 
 /* Sections */
 section{
-    padding:40px 20px;
+    padding:35px 20px;
     scroll-margin-top:80px;
 }
 
 h2{
-    font-size:28px;
-    margin-bottom:15px;
+    font-size:24px;
+    margin-bottom:12px;
     color:#00c6ff;
+}
+
+p{
+    font-size:14px;
+    line-height:1.6;
 }
 
 /* Skills */
 .skills{
     display:flex;
-    gap:15px;
+    gap:10px;
     flex-wrap:wrap;
-    justify-content: left;
 }
 
 .skill{
     background:#003153;
-    padding:12px 18px;
-    border-radius:8px;
-    transition:.3s;
-    
+    padding:10px 14px;
+    border-radius:6px;
+    font-size:13px;
 }
-
 
 /* Projects */
 .projects{
     display:flex;
-    gap:15px;
+    gap:10px;
     flex-wrap:wrap;
-    justify-content: left;
 }
 
 .project{
-    width:280px;
-    height:180px;
-    border-radius:8px;
+    width:260px;
+    height:160px;
+    border-radius:6px;
     overflow:hidden;
 }
 
@@ -200,11 +179,6 @@ h2{
     width:100%;
     height:100%;
     object-fit:cover;
-    transition:0.3s;
-}
-
-.project:hover img{
-    transform:scale(1.1);
 }
 
 /* Contact */
@@ -215,75 +189,79 @@ h2{
 .contact-item{
     display:flex;
     align-items:center;
-    margin:15px 0;
+    margin:10px 0;
+    padding:8px;
 }
-.icon a{
-    color:#25D366; /* WhatsApp color */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-    height:100%;
-    text-decoration:none;
-}
-
 
 .icon{
-    width:40px;
-    height:40px;
+    width:35px;
+    height:35px;
     border-radius:50%;
     background:#2c2c2c;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-right:15px;
+    margin-right:10px;
 }
-
-.fa-whatsapp{
-    font-size:22px;
-}
-
 
 .icon i{
+    font-size:16px;
     color:#00c6ff;
 }
 
-.contact-item{
-    transition:.3s;
-    padding:10px 12px;
-    border-radius:12px;
-}
-
-
-.icon{
-    transition:.3s;
-}
-
-.contact-item:hover .icon{
-    transform:scale(1.08);
-    box-shadow:0 0 15px rgba(0,198,255,.25);
+.fa-whatsapp{
+    color:#25D366;
 }
 
 .text{
+    font-size:13px;
     color:#ccc;
 }
 
-/* Responsive */
+/* Mobile Responsive */
 @media(max-width:768px){
+
+    .nav-links a{
+        font-size:12px;
+        margin:0 6px;
+    }
 
     .hero{
         flex-direction:column;
         text-align:center;
     }
 
+    .profile{
+        width:160px;
+        height:160px;
+    }
+
     .hero-text h1{
-        font-size:32px;
+        font-size:26px;
+    }
+
+    .hero-text p{
+        font-size:13px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    p{
+        font-size:13px;
+    }
+
+    .btn{
+        font-size:12px;
+        padding:6px 15px;
     }
 
     .project{
         width:100%;
     }
 }
+
 </style>
 </head>
 
@@ -321,8 +299,7 @@ h2{
 <!-- About -->
 <section id="about">
     <h2>About Me</h2>
-    <p> My name is Sakib Ahmed. I am a simple person with a strong interest in learning new things and improving my skills.
-    I enjoy technology, online work, and connecting with people. I always try to learn something new every day.</p>
+    <p>My name is Sakib Ahmed. I am a simple person with a strong interest in learning new things and improving my skills. I enjoy technology, online work, and connecting with people.</p>
 </section>
 
 <!-- Skills -->
@@ -330,8 +307,8 @@ h2{
     <h2>Skills</h2>
     <div class="skills">
         <div class="skill">Computer</div>
-        <div class="skill">Internet Browsing </div>
-        <div class="skill">Sales Skills </div>
+        <div class="skill">Internet Browsing</div>
+        <div class="skill">Sales Skills</div>
     </div>
 </section>
 
@@ -348,25 +325,30 @@ h2{
 <!-- Contact -->
 <section id="contact">
     <h2>Contact</h2>
+
     <div class="contact-box">
-<div class="contact-item">
-    <div class="icon">
-        <a href="https://wa.me/8801967294900" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-    <div class="text">01967294900</div>
-</div>
-</div>
+
+        <div class="contact-item">
+            <div class="icon">
+                <a href="https://wa.me/8801967294900" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="text">01967294900</div>
+        </div>
+
         <div class="contact-item">
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <div class="text">sakibzex19@gmail.com</div>
         </div>
+
         <div class="contact-item">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="text">Banasree,  Dhaka-1219.</div>
+            <div class="text">Block B, Banasree, Dhaka-1219</div>
         </div>
+
     </div>
+
 </section>
 
 </div>
